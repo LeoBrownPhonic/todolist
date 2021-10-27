@@ -2,7 +2,6 @@ package todo;
 
 import java.util.ArrayList;
 import org.junit.Test;
-
 import static org.junit.Assert.assertEquals;
 
 public class TaskTest {
@@ -10,12 +9,11 @@ public class TaskTest {
     @Test public void testStartWithEmptyTodo() {
         Task classUnderTest = new Task();
         ArrayList<String> emptytest = new ArrayList<String>();
-        assertEquals("check list starts empty", classUnderTest.getTasks(), emptytest);
+        assertEquals("check list starts empty", classUnderTest.tasklist, emptytest);
     }
     @Test public void testAddTask(){
         Task classUnderTest = new Task();
         classUnderTest.addTask("Test message");
-       // result = classUnderTest.getTask
         assertEquals("checks task is added", classUnderTest.getTasks().get(0), "Test message" );
     }
     @Test public void testGetsTasks(){
