@@ -17,8 +17,6 @@ public class Task {
   public ArrayList<String> getTasks() {
     return this.tasklist;
   }
-  
-
 }
 
 // public class Task {
