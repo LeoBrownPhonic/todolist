@@ -9,7 +9,13 @@ public class TaskTest {
   
     @Test public void testStartWithEmptyTodo() {
         Task classUnderTest = new Task();
-        ArrayList<Task> emptytest = new ArrayList<Task>();
+        ArrayList<String> emptytest = new ArrayList<String>();
         assertEquals("check list starts empty", classUnderTest.getTasks(), emptytest);
+    }
+    @Test public void testAddTask(){
+        Task classUnderTest = new Task();
+        classUnderTest.addTask("Test message");
+       // result = classUnderTest.getTask
+        assertEquals("check list starts empty", classUnderTest.getTasks().get(0), "Test message" );
     }
 }

@@ -4,20 +4,20 @@ import java.util.ArrayList;
 
 public class Task {
 
-  ArrayList<Task> tasklist; 
+  ArrayList<String> tasklist; 
 
   Task() {
-    tasklist = new ArrayList<Task>();
+    tasklist = new ArrayList<String>();
   }
 
-  // public String addTask(String task) {
-  //   String 
-  //   tasklist.add(task);
-  // }
+  public void addTask(String task) {
+    tasklist.add(task);
+  }
 
-  public ArrayList<Task> getTasks() {
+  public ArrayList<String> getTasks() {
     return this.tasklist;
   }
+  
 
 }
 
